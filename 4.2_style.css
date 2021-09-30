@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.project {
+}
+.show-img {
+    width: 20%;
+    float: left;
+}
+.front-img {
+
+}
+
+.front-img img {
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.select-img {
+    width: 100%;
+}
+
+.select-img img{
+    width: 25%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.des-project {
+    font-size: 0.8em;
+    text-align: center;
+    width: 80%;
+    float: left;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+.des-project img {
+    padding: 2% 10%;
+    box-sizing: border-box;
+}
+
+.letter {
+    width: 100%;
+
+}
+
+.letter .price {
+    color: red;
+    text-align: left;
+    padding: 2% 0 2% 31.8%;
+    box-sizing: border-box;
+}
+
+.sale {
+    width: 100%;
+
+}
+
+.sale img {
+    width: 100%;
+}
+
+.buy {
+    margin-top: 2%;
+
+}
+
+.btn1, .btn2 {
+    width: 46%;
+    float: left;
+    background-color: blue;
+    color: white;
+    padding: 0.2rem;
+    margin: 2%;
+
+}
+
+.btn1:hover, .btn2:hover {
+    background-color: cyan;
+    color: black ;
+    transition: background-color 1.5s ease-in-out 100ms, color 2s linear 200ms;
+    transform: rotate(360deg);
+    
+}
+
+.box {
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    margin: auto;
+    margin-top: -200px;
+    background-color: orange;
+    transition: transform 100s ease-in;
+    transform: rotate(100turn);
+    transform-origin: top left;
+    position: absolute;
+}
+
+.box:hover {
+    transition: transform 10s ease-in;
+    transform: rotate(100turn);
+}

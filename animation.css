@@ -1,0 +1,111 @@
+.img1, .img2 {
+    width: 100px;
+    height: auto;
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    display: block;
+}
+
+.img2 {
+
+}
+
+.img1 {
+    animation: batman 5s infinite linear 0.3s forwards;
+}
+
+.img2 {
+    animation: batman 5s infinite linear forwards;
+}
+
+@keyframes batman {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    12.5%{
+        top: 0%;
+        left: 45%;
+    }
+
+    25%{
+        top: 40%;
+        left: 45%;
+    }
+
+    50% {
+        top: 40%;
+        left: 94%;
+    }
+
+    62.5% {
+        top: 88%;
+        left: 94%;
+    }
+
+    75% {
+        top: 88%;
+        left: 45%;
+    }
+
+    87.5%{
+        top: 40%;
+        left: 45%;
+    }
+    99%{
+        top: 40%;
+        left: 0;
+    }
+    100% {
+        top: 0;left: 0;
+    }
+}
+
+@keyframes pacman {
+    0% {
+        top: 100%;
+        left: 100%;
+        transform: rotate(0deg);
+    }
+
+    12.5%{
+        top: 0;
+        left: 50%;
+        transform: rotate(0deg);
+
+    }
+    12.51%{
+        top: 0;
+        left: 50%;
+        transform: rotate(90deg);
+    }
+
+    25%{
+        top: 50%;
+        left: 50%;
+        transform: rotate(90deg);
+    25.1%{
+        top: 50%;
+        left: 50%;
+        transform: rotate(0deg);
+    }
+
+    50%{
+        bottom: 0;
+        right: 0;
+        transform: rotate(0deg);
+    }
+    50.1%{
+        bottom: 0;
+        right: 0;
+        transform: rotate(0deg);
+    }
+
+    62.5%{
+        bottom: 0;
+        right: 50%;
+    }
+
+}

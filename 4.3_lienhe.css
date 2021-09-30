@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+body {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    margin: 0;
+}
+
+.lienhe {
+    border-collapse: collapse;
+    background-color: rgb(88, 25, 235);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.col-right {
+    column-gap: 3;
+}

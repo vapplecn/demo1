@@ -1,0 +1,103 @@
+.rain {
+    background-color: #000;
+}
+.rain-drop {
+    width: 2px;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    position: fixed;
+    background-image: linear-gradient(to bottom, transparent, cyan); /* màu chuyển sắc từ trong suốt tới trắng*/
+}
+.layer-1 .rain-drop {
+    height: 100px;
+}
+.layer-2 .rain-drop {
+    height: 50px;
+}
+
+.rain-drop:nth-child(2) {
+    left: 10%; /* sử dụng % là để tiện responsive nhé */
+  }
+.rain-drop:nth-child(3) {
+    left: 80%;
+  }
+.rain-drop:nth-child(4) {
+    left: 35%;
+  }
+.rain-drop:nth-child(5) {
+    left: 65%;
+  }
+
+.layer-2 .rain-drop:first-child {
+    left: 5%;
+}
+.layer-2 .rain-drop:nth-child(2) {
+    left: 20%;
+}
+.layer-2 .rain-drop:nth-child(3) {
+    left: 45%;
+}
+.layer-2 .rain-drop:nth-child(4) {
+    left: 75%;
+}
+.layer-2 .rain-drop:nth-child(5) {
+    left: 90%;
+    animation: rainFall 2s;
+}
+
+.layer-1 div {
+    animation: rainFall .5s linear 0s infinite forwards;
+}
+
+.layer-2 div {
+    animation: rainFall .5s linear .25s infinite forwards;
+
+}
+
+@keyframes rainFall {
+    0% {
+      top: 100px;
+    }
+    50% { /* cái 50% này là optional, mình muốn hạt mưa rơi xuống hết xong chờ 1 chút rồi mới lại rơi lần nữa, có thể là 50% hoặc bao nhiêu % tùy thuộc vào bạn muốn đỗ trễ  là bao nhiêu */
+      top: 100vh;
+    }
+    100% {
+      top: 100vh;
+      left: -20vw;
+      transform: rotate(180deg);
+    }
+  }
+
+.anhbanh {
+    left: 300px;
+    position: fixed;
+}
+
+.abanh {
+    width: 100px;
+    top: 100px;
+    left: 0;
+    position: fixed;
+}
+
+.covn {
+    width: 100px;
+    top: 20px;
+    left: 95px;
+    position: fixed;
+}
+
+.covn {
+    animation: covn 1s infinite;
+    transform-origin: left;
+}
+
+@keyframes covn {
+    33% {
+        transform: rotatey(90deg);
+    }
+    66% {
+        transform: rotateY(180deg);
+    }
+
+}
